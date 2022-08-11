@@ -1,4 +1,4 @@
-XOF is a Work-in-Progress project to 
+XOF is a Work-in-Progress project to \n
 1 - Learn C#
 2 - Learn Cryptography
 3 - Mix both of them
