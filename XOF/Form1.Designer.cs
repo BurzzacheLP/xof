@@ -33,6 +33,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.radioEncrypt = new System.Windows.Forms.RadioButton();
+            this.radioDecrypt = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // button1
@@ -57,7 +59,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 69);
+            this.textBox1.Location = new System.Drawing.Point(12, 252);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(49, 20);
             this.textBox1.TabIndex = 2;
@@ -74,17 +76,41 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 53);
+            this.label2.Location = new System.Drawing.Point(12, 236);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Shift";
+            // 
+            // radioEncrypt
+            // 
+            this.radioEncrypt.AutoSize = true;
+            this.radioEncrypt.Location = new System.Drawing.Point(12, 57);
+            this.radioEncrypt.Name = "radioEncrypt";
+            this.radioEncrypt.Size = new System.Drawing.Size(67, 17);
+            this.radioEncrypt.TabIndex = 5;
+            this.radioEncrypt.TabStop = true;
+            this.radioEncrypt.Text = "Encriptar";
+            this.radioEncrypt.UseVisualStyleBackColor = true;
+            // 
+            // radioDecrypt
+            // 
+            this.radioDecrypt.AutoSize = true;
+            this.radioDecrypt.Location = new System.Drawing.Point(12, 80);
+            this.radioDecrypt.Name = "radioDecrypt";
+            this.radioDecrypt.Size = new System.Drawing.Size(85, 17);
+            this.radioDecrypt.TabIndex = 6;
+            this.radioDecrypt.TabStop = true;
+            this.radioDecrypt.Text = "Desencriptar";
+            this.radioDecrypt.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(497, 287);
+            this.Controls.Add(this.radioDecrypt);
+            this.Controls.Add(this.radioEncrypt);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
@@ -104,6 +130,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RadioButton radioEncrypt;
+        private System.Windows.Forms.RadioButton radioDecrypt;
     }
 }
 
