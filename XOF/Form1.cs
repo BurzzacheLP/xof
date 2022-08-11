@@ -19,6 +19,7 @@ namespace Desencriptador
 
         
         
+        // Clave Caesar
         public static char cipher(char ch, int key)
         {
             if (!char.IsLetter(ch))
@@ -39,6 +40,13 @@ namespace Desencriptador
 
             return output;
         }
+
+        public static string caesarDecipher(string input, int key)
+        {
+            return caesarEncipher(input, 26 - key);
+        }
+
+        // Fin Clave Caesar
 
         private void button1_Click(object sender, EventArgs e)
         {

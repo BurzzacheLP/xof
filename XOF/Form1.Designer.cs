@@ -157,7 +157,7 @@
         private System.Windows.Forms.RadioButton radioDecrypt;
         private System.Windows.Forms.GroupBox groupBox1;
         public System.Windows.Forms.TextBox shiftBox;
-        private System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox textBox1;
     }
 }
 
