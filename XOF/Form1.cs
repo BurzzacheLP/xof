@@ -17,11 +17,39 @@ namespace Desencriptador
             InitializeComponent();
         }
 
+        
+        
+        public static char cipher(char ch, int key)
+        {
+            if (!char.IsLetter(ch))
+            {
+                return ch;
+            }
 
+            char d = char.IsUpper(ch) ? 'A' : 'a';
+            return (char)((((ch + key) - d) % 26 )+ d);
+        }
+
+        public static string caesarEncipher(string input, int key)
+        {
+            string output = string.Empty;
+
+            foreach (char ch in input)
+                output += cipher(ch, key);
+
+            return output;
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            switch (comboBox1.Text)
+            {
+                case "Caesar":
+                    
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
