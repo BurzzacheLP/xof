@@ -16,9 +16,8 @@ namespace Desencriptador
         {
             InitializeComponent();
         }
+        
 
-        
-        
         // Clave Caesar
         public static char cipher(char ch, int key)
         {
@@ -53,9 +52,37 @@ namespace Desencriptador
             switch (comboBox1.Text)
             {
                 case "Caesar":
+                    if (radioEncrypt.Checked)
+                    {
+                        string userString = userStringBox.Text;
+                        int key = Convert.ToInt32(shiftBox.Text);
+                        
+                        string cipherText = caesarEncipher(userString, key);
+                        
+                        Result.Text = cipherText;
+                    }
                     
-                    break;
+                    else if (radioDecrypt.Checked)
+                    {
+                        // Decript
+                        string userString = userStringBox.Text;
+                        int key = Convert.ToInt32(shiftBox.Text);
+                        
+                        string cipherText = caesarEncipher(userString, key);
+                        string t = caesarDecipher(cipherText, key);
+                        
+                        Result.Text = t;
+                    }
+                    else
+                    {
+                        // Error
+                        MessageBox.Show("Seleccione una opcion \n Encriptado o Desencriptado");
+                    }
+                        break;    
+                    
+                    
                 default:
+                    MessageBox.Show("Seleccione una clave!");
                     break;
             }
         }

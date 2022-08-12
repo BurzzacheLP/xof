@@ -36,7 +36,8 @@
             this.radioEncrypt = new System.Windows.Forms.RadioButton();
             this.radioDecrypt = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Result = new System.Windows.Forms.TextBox();
+            this.userStringBox = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -123,19 +124,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Parametros";
             // 
-            // textBox1
+            // Result
             // 
-            this.textBox1.Location = new System.Drawing.Point(343, 128);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 8;
+            this.Result.Location = new System.Drawing.Point(218, 99);
+            this.Result.Name = "Result";
+            this.Result.Size = new System.Drawing.Size(267, 20);
+            this.Result.TabIndex = 8;
+            // 
+            // userStringBox
+            // 
+            this.userStringBox.Location = new System.Drawing.Point(218, 37);
+            this.userStringBox.Name = "userStringBox";
+            this.userStringBox.Size = new System.Drawing.Size(267, 20);
+            this.userStringBox.TabIndex = 9;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(497, 287);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.userStringBox);
+            this.Controls.Add(this.Result);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
@@ -157,7 +166,8 @@
         private System.Windows.Forms.RadioButton radioDecrypt;
         private System.Windows.Forms.GroupBox groupBox1;
         public System.Windows.Forms.TextBox shiftBox;
-        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox Result;
+        public System.Windows.Forms.TextBox userStringBox;
     }
 }
 
